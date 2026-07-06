@@ -1,0 +1,32 @@
+# --- Project docs to exclude ---
+DOCUMENTATION.md
+
+# --- Vault data (never commit real password databases) ---
+*.db
+vault.db
+
+# --- LaTeX build artifacts ---
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.pdf
+*.tex
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.spyproject/
+.DS_Store
+Thumbs.db

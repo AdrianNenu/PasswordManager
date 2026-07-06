@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Overview and relevance}{2}{section.1}%
+\contentsline {section}{\numberline {2}How the requirements are satisfied}{2}{section.2}%
+\contentsline {paragraph}{Note on Argon2 vs Scrypt.}{2}{section*.3}%
+\contentsline {section}{\numberline {3}Architecture}{2}{section.3}%
+\contentsline {section}{\numberline {4}Cryptographic design and justification}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Deriving the key (Scrypt)}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Encrypting the data (AES-256-GCM)}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Verifying the master password}{3}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}What the database contains}{4}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Installation and running}{4}{section.5}%
+\contentsline {section}{\numberline {6}User interface}{4}{section.6}%
+\contentsline {section}{\numberline {7}Development steps}{7}{section.7}%
+\contentsline {section}{\numberline {8}Problems encountered and solutions applied}{8}{section.8}%
+\contentsline {section}{\numberline {9}Testing}{8}{section.9}%
+\contentsline {section}{\numberline {10}Critical analysis, threat model and limitations}{8}{section.10}%
+\contentsline {section}{\numberline {11}Conclusion}{9}{section.11}%
