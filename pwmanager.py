@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""
-pwmanager.py
-============
-Command-line front-end for the encrypted password vault.
-
-Usage
------
-    python3 pwmanager.py                 # uses ./vault.db
-    python3 pwmanager.py my_vault.db     # custom file
-
-On first run you set a master password; on later runs you must enter it to
-unlock the vault. The master password is never stored anywhere.
-"""
-
 from __future__ import annotations
 
 import getpass

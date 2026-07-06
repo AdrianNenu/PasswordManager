@@ -1,28 +1,3 @@
-#!/usr/bin/env python3
-"""
-pwmanager_gui.py
-================
-A polished graphical interface (Tkinter/ttk) for the encrypted password vault.
-
-It reuses the exact same backend as the command-line version:
-  * crypto_utils.py  -> Scrypt KDF, AES-256-GCM, password generator
-  * vault.py         -> encrypted SQLite storage + CRUD
-
-Run it with:
-    python3 pwmanager_gui.py            # uses ./vault.db
-    python3 pwmanager_gui.py mine.db    # custom vault file
-
-Features
---------
-* Create-vault / unlock screens (master password hidden).
-* Entry list with live search.
-* Details panel with a **Show/Hide** toggle to reveal a stored password,
-  plus one-click copy (clipboard auto-clears after 20 s).
-* Add / Edit / Delete dialogs with a built-in strong-password generator.
-* Change master password (re-encrypts the whole vault).
-* Auto-lock after 5 minutes of inactivity, and a manual Lock button.
-"""
-
 from __future__ import annotations
 
 import sys

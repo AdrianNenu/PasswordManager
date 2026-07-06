@@ -1,28 +1,3 @@
-"""
-vault.py
-========
-The vault ties the crypto layer to persistent storage in SQLite.
-
-Storage model
--------------
-The database file holds NOTHING in the clear except the KDF parameters that are
-needed to derive the key (the salt and Scrypt cost factors are not secret).
-Every credential is stored as an opaque AES-256-GCM blob, so if someone copies
-the `.db` file they only see random-looking bytes.
-
-Two tables:
-
-  meta      one row: kdf name, salt, Scrypt params, a "verifier" blob, schema
-            version. The verifier is a known constant encrypted with the key;
-            being able to decrypt it proves the master password is correct.
-
-  entries   one row per credential: id + the encrypted JSON blob describing the
-            entry (title, username, password, url, notes, timestamps).
-
-Because titles are also inside the encrypted blob, the database leaks only the
-*number* of stored entries, nothing about their contents.
-"""
-
 from __future__ import annotations
 
 import json

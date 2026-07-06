@@ -1,23 +1,3 @@
-"""
-crypto_utils.py
-===============
-Low-level cryptographic building blocks for the password vault.
-
-Design goals
-------------
-1. Derive the encryption key from the master password with a *memory-hard*
-   key-derivation function (Scrypt) so that brute-forcing the master password
-   is expensive even with GPUs/ASICs.
-2. Encrypt every secret with AES-256 in GCM mode. GCM is an *authenticated*
-   cipher: it guarantees both confidentiality (nobody can read the data) and
-   integrity (nobody can tamper with the ciphertext without detection).
-3. Never reuse a (key, nonce) pair. A fresh random 96-bit nonce is generated
-   for every single encryption.
-
-Only the `cryptography` library is used; it is a well-audited, widely used
-implementation of these primitives.
-"""
-
 from __future__ import annotations
 
 import secrets
