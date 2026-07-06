@@ -27,8 +27,6 @@ project, with a working command-line app **and** a polished graphical interface.
 
 ## 🖼️ Screenshots
 
-> The images below are placeholders — replace the files in `screenshots/` with
-> your own captures (keep the same filenames).
 
 ### Unlock / create screen
 ![Unlock screen](screenshots/unlock.png)
@@ -93,8 +91,7 @@ design** — that is the whole point of the encryption.
 4. **Storage.** Only ciphertext and non-secret KDF parameters are written to
    SQLite, so a stolen `.db` file is opaque.
 
-Full reasoning, threat model and limitations are in
-[`DOCUMENTATION.md`](DOCUMENTATION.md) and the LaTeX report (`documentation.tex`).
+
 
 ---
 
@@ -119,9 +116,6 @@ pwvault/
 ├── vault.py             # encrypted SQLite storage, CRUD, re-keying
 ├── crypto_utils.py      # Scrypt KDF, AES-256-GCM, password generator
 ├── selftest.py          # automated functional + security tests
-├── requirements.txt     # single dependency: cryptography
-├── DOCUMENTATION.md      # project documentation (Markdown)
-├── documentation.tex    # project documentation (LaTeX report)
 └── screenshots/         # images used by the README and the report
 ```
 
